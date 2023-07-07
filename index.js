@@ -25,7 +25,7 @@ delete myCity.info['isPopular']
 
 console.log(myCity) */
 
-const name = 'Kirill'
+/* const name = 'Kirill'
 const postsQty = 23
 
 const userProfile = {
@@ -34,4 +34,73 @@ const userProfile = {
     hasSignedAgreement: false
 }
 
-console.log(userProfile)
+console.log(userProfile) */
+
+/* const myCity ={
+    city: 'New York',
+    cityGreeting () {
+        console.log('Greetings!!!')
+    }
+}
+
+myCity.cityGreeting() */
+
+
+// Мутации объектов
+/* const person = {
+    name: 'Bob',
+    age: 21
+}
+
+const person2 = person
+
+person2.age = 26
+person2.isAdult = true
+
+console.log(person.age) //22
+console.log(person.isAdult) //true */
+
+// Как избежать мутаций 1
+
+/* const person = {
+    name: 'Bob',
+    age: 21
+}
+
+const person2 = Object.assign({}, person)
+
+person2.age = 26
+
+console.log(person2)
+console.log(person) */
+
+// Как избежать мутаций 2
+
+/* const person = {
+    name: 'Bob',
+    age: 21
+}
+
+const person2 = {...person}
+
+person2.name = 'Kirill'
+
+console.log(person2)
+console.log(person) */
+
+// Как избежать мутаций 3
+
+const person = {
+    name: 'Bob',
+    age: 21,
+    infoMan: {
+        isPopular: true,
+        country: 'USA'
+    } 
+}
+
+const person2 = JSON.parse(JSON.stringify(person))
+person2.name = 'Kirill'
+
+console.log(person2)
+console.log(person)
