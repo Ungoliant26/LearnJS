@@ -90,7 +90,7 @@ console.log(person) */
 
 // Как избежать мутаций 3
 
-const person = {
+/* const person = {
     name: 'Bob',
     age: 21,
     infoMan: {
@@ -103,4 +103,26 @@ const person2 = JSON.parse(JSON.stringify(person))
 person2.name = 'Kirill'
 
 console.log(person2)
-console.log(person)
+console.log(person) */
+
+let a = 5
+let b = 3
+
+function sum(a, b) {
+    const c = a + b
+    console.log(c)
+}
+
+sum(a, b)
+
+a = 8
+b = 12
+
+sum(a, b)
+
+a = 44
+b = 56
+
+sum(a, b)
+
+a = 11111
