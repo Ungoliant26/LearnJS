@@ -105,7 +105,7 @@ person2.name = 'Kirill'
 console.log(person2)
 console.log(person) */
 
-let a = 5
+/* let a = 5
 let b = 3
 
 function sum(a, b) {
@@ -123,6 +123,25 @@ sum(a, b)
 a = 44
 b = 56
 
-sum(a, b)
+sum(a, b) */
 
-a = 11111
+/* const personOne = {
+    name: 'Bob',
+    age: 21
+}
+
+function increasePersonAge (person) {
+    const updatedPerson = Object.assign({}, person)
+    updatedPerson.age += 1
+    return updatedPerson
+}
+
+const updatedPersonOne = increasePersonAge (personOne)
+console.log (personOne)
+console.log (updatedPersonOne) */
+
+function printMyName () {
+    console.log ('Kirill')
+}
+
+setTimeout (printMyName, 1000)
