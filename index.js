@@ -140,8 +140,41 @@ const updatedPersonOne = increasePersonAge (personOne)
 console.log (personOne)
 console.log (updatedPersonOne) */
 
-function printMyName () {
-    console.log ('Kirill')
+/* const button = {
+    width: 200,
+    text: 'Buy',
+    color: 'green'
 }
 
-setTimeout (printMyName, 1000)
+const redButton = {
+    ...button,
+    color: 'red'
+}
+
+console.table(redButton) */
+
+/* const buttonInfo = {
+    text: 'Buy'
+}
+
+const buttonStyle = {
+    color: 'yellow',
+    width: 200,
+    height: 300
+}
+
+const button = {
+    ...buttonInfo,
+    ...buttonStyle
+}
+
+console.table(button) */
+
+//Шаблонные строки
+
+const nameMe = 'Kirill'
+const myTown = 'Stavropol'
+
+const meInfo = `${'Меня зовут:'} ${nameMe} ${'Я живу в городе:'} ${myTown}`
+
+console.log (meInfo)
