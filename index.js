@@ -172,9 +172,13 @@ console.table(button) */
 
 //Шаблонные строки
 
-const nameMe = 'Kirill'
+/* const nameMe = 'Kirill'
 const myTown = 'Stavropol'
 
 const meInfo = `${'Меня зовут:'} ${nameMe} ${'Я живу в городе:'} ${myTown}`
 
-console.log (meInfo)
+console.log (meInfo) */
+
+setTimeout(() => {
+    console.log('Отложенное сообщение')
+}, 1000)
