@@ -179,6 +179,23 @@ const meInfo = `${'Меня зовут:'} ${nameMe} ${'Я живу в город
 
 console.log (meInfo) */
 
-setTimeout(() => {
+// Стрелочная функция
+/* setTimeout(() => {
     console.log('Отложенное сообщение')
-}, 1000)
+}, 1000) */
+
+
+// try/catch отслеживание ошибок
+
+const fnWithError = () => {
+    throw new Error ('Some error')
+}
+try {
+    fnWithError()
+} catch (error) {
+    console.error(error)
+    console.log(error.message)
+}
+
+
+console.log ('Continue...')
