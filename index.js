@@ -187,7 +187,7 @@ console.log (meInfo) */
 
 // try/catch отслеживание ошибок
 
-const fnWithError = () => {
+/* const fnWithError = () => {
     throw new Error ('Some error')
 }
 try {
@@ -198,4 +198,55 @@ try {
 }
 
 
-console.log ('Continue...')
+console.log ('Continue...') */
+
+
+// Работа с массивами
+
+
+/* const myMass = [1, true, 'Kirill']
+
+console.log (myMass)
+
+console.log (myMass[0])
+console.log (myMass[1])
+
+console.log (myMass.length) */
+
+/* const myArray = [1, 2, 3, 4]
+console.log (myArray)
+
+myArray[2] = 'Kirill'
+console.log (myArray)
+
+myArray[4] = false
+console.log (myArray)
+console.log (myArray.length) */
+
+//Метод push - добавить элемент в конце массива
+//myArray.push(4) //добавить число 4 к массиву
+
+//Метод pop - удалить последний элемент в массиве
+//myArray.pop() - удалить последний элемент массива const myArray = [1, 2, 3]
+//const removedElement = myArray.pop() - вернуть удаленный элемент
+
+//Метод unshift - добавить элемент в начало массива
+//myArray.unshift(true)
+
+//Метод shift - удаляет первый элемент массива
+//myArray.shift()
+//const removedElement = myArray.shift() - вернуть удаленный элемент
+
+//Метод forEach - перебор элементов массива. Для каждого элемента массива будет вызываться callback функция(например). Не меняет массив.
+/* const myArray = [1, 2, 3]
+console.log(myArray)
+myArray.forEach(el => console.log(el*2))
+console.log(myArray) */
+
+//Метод map - перебирает элементы массива и формирует его заново, исходя из результатов callback функции. Присвоить константу для возврата значений
+/* const myArray = [1, 2, 3]
+console.log(myArray)
+const newArray = myArray.map(el =>el*3)
+console.log(newArray)
+console.log(myArray) */
+
