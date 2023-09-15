@@ -243,10 +243,89 @@ console.log(myArray)
 myArray.forEach(el => console.log(el*2))
 console.log(myArray) */
 
-//Метод map - перебирает элементы массива и формирует его заново, исходя из результатов callback функции. Присвоить константу для возврата значений
+//Метод map - перебирает элементы массива и формирует его заново, исходя из результатов callback функции. Присвоить константу для возврата новых значений массива
 /* const myArray = [1, 2, 3]
 console.log(myArray)
-const newArray = myArray.map(el =>el*3)
+const newArray = myArray.map(el => el*3)
 console.log(newArray)
 console.log(myArray) */
+
+//явное возвращение значения
+/* const myArray = [1, 2, 3]
+console.log(myArray)
+const newArray = myArray.map((el) =>  {
+    return el*3
+})
+console.log(newArray)
+console.log(myArray) */
+
+// Деструктуризация объектов/массивов/функций
+
+/* const userProfile = {
+    name: 'Kirill',
+    comentsQty: 23,
+    hasSignedAgreement: false
+}
+
+const {name, comentsQty} = userProfile
+const {hasSignedAgreement} = userProfile
+
+console.log (name)
+console.log (comentsQty) */
+
+/* const fruits = ['Apple', 'Orange']
+const [fruitZero, fruitOne] = fruits
+
+console.log (fruitZero)
+console.log (fruitOne) */
+
+/* const userProfile = {
+    name: 'Kirill',
+    commentsQty: 23,
+    hasSignedAgreement: false
+}
+
+const userInfo = ({name, commentsQty}) => {
+    if (!commentsQty) {
+        return `User ${name} has no comments`
+    }
+    return `User ${name} has ${commentsQty} comments`
+}
+
+userInfo(userProfile) */
+
+//Условные инструкции
+
+/* const age = 17
+
+if (age >= 18) {
+    console.log('Is adult')
+} 
+
+if (age >=12 && age < 18) {
+    console.log('Is teenager')
+} 
+
+if (age < 12) {
+    console.log('Is child')
+} */
+
+//if в функциях
+
+let a=10
+let b=10
+
+const sumPositiveNumbers = (a, b) => {
+if (typeof a !== 'number' || typeof b !== 'number') {
+    return 'One of the numbers is not a number'
+}
+
+if (a <= 0 || b <= 0) {
+    return 'Numbers are not positive'
+}
+
+    return a+b
+}
+
+
 
