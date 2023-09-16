@@ -312,10 +312,7 @@ if (age < 12) {
 
 //if в функциях
 
-let a=10
-let b=10
-
-const sumPositiveNumbers = (a, b) => {
+/*const sumPositiveNumbers = (a, b) => {
 if (typeof a !== 'number' || typeof b !== 'number') {
     return 'One of the numbers is not a number'
 }
@@ -324,8 +321,37 @@ if (a <= 0 || b <= 0) {
     return 'Numbers are not positive'
 }
 
-    return a+b
-}
+    return a + b
+}  */
+
+//Инструкция switch
+
+/* const month = 3
+
+switch (month) {
+    case 3:
+        console.log('Март')
+        break
+    case 4:
+        console.log('Апрель')
+        break
+    case 5:
+        console.log('Май')
+        break
+    default:
+        console.log('Это не весна')
+} */
+
+//Тернарные операторы
+
+const value1 = 10
+const value2 = 67
+
+value1 && value2
+    ? myFunction1 (value1, value2)
+    : myFunction2()
+
+
 
 
 
