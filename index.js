@@ -344,14 +344,52 @@ switch (month) {
 
 //Тернарные операторы
 
-const value1 = 10
-const value2 = 67
+/* perem = -99
 
-value1 && value2
-    ? myFunction1 (value1, value2)
-    : myFunction2()
+const result = perem <=-100 ? perem : -perem
+console.log(result) */
 
+//Циклы for/ for in/ while/ do while/ for of
 
+/* for (let a = 7; a > 1; a--) {
+    console.log(a)
+} */
 
+/* const myMass = ['Одын', 'Двыа', 'Тры']
 
+myMass.forEach((Element, index) => {
+    console.log(Element, index)
+}) */
+
+/* let a = 10
+
+while (a > 1) {
+    console.log(a)
+    a = (a - 2)
+} */
+
+/* let b = 4
+
+do {
+    console.log(b)
+    b--
+} while (b > 5); */
+
+/* const myExample = {
+    a: 10,
+    b: false,
+    c: 'dsd',
+}
+
+for (const key in myExample) {
+    console.log(key, myExample[key])
+} */
+
+/* const myNum = '65673'
+
+for (const letter of myNum) {
+    console.log(letter)
+} */
+
+//Модули
 
