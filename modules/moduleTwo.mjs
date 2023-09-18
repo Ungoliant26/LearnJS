@@ -1,11 +1,16 @@
-import multipNum from './moduleOne.mjs'
+import {multip, subtrac} from './moduleOne.mjs'
+import {func1} from './moduleThree.mjs'
 
-const result1 = multipNum(5, 9)
+console.log(func1(15, 3))
 
-console.log(result1)
+console.log(multip(15, 3))
 
-const result2 = multipNum(77, 10)
+console.log(subtrac(55, 45))
 
-console.log(result2)
+/* import {
+    first as second,
+    value
+} from './moduleOne.mjs'
 
-console.log(MyLoveNum)
+console.log(second)
+console.log(value) */

@@ -1,6 +1,14 @@
-const myLoveNum = 7
 const multip = (a, b) => a * b
 
-console.log(myLoveNum)
+const subtrac = (a, b) => a - b
 
-export default multip
+export {multip, subtrac}
+
+/* const first = 444
+
+const value = false
+
+export {
+    first,
+    value
+} */
