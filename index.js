@@ -391,9 +391,9 @@ for (const letter of myNum) {
     console.log(letter)
 } */
 
-//Классы и прототипы
+//Классы и прототипы - пока неясно как рабоать и как применять
 
-class Comment {
+/* class Comment {
     constructor(text) {
         this.text = text
         this.votesQty = 0
@@ -410,5 +410,56 @@ firstComment.upvote()
 console.log(firstComment.votesQty)
 
 firstComment.upvote()
-console.log(firstComment.votesQty)
+console.log(firstComment.votesQty) */
 
+/* class NumbersArray extends Array {
+    sum() {
+        return this.reduce((el, acc) => acc += el, 0)
+    }
+}
+
+const myArray = new NumbersArray (5, 10, 20)
+
+console.log(myArray)
+myArray.sum() */
+
+/* const array = [5, 123, 556, 78, 3];
+const res = array.reduce((acc, rec) => acc + rec);
+
+console.log(res); */
+
+//Promises
+
+/* const getData = (url) =>
+    new Promise ((resolve, reject) =>
+        fetch(url)
+            .then(response => response.json())
+            .then(json => resolve(json))
+            .catch(error => reject(error))
+    )
+
+getData('https://jsonplaceholder.typicode.com/todos/5')
+    .then(data => console.log(data))
+    .catch(error => console.log(error.message)) */
+
+/* const asyncFn = async () => {
+    throw new Error('Ааа всё поломалося!')
+}
+
+asyncFn()
+    .then(value => console.log(value))
+    .catch(error => console.log(error.message)) */
+
+const timerPromise = () =>
+    new Promise ((resolve, reject) =>
+    setTimeout(() => resolve(), 2000))
+
+const asyncFn = async () => {
+    console.log('Timer starts')
+    const startTime = performance.now()
+    await timerPromise()
+    const endTime = performance.now()
+    console.log('Timer ended, endTime - start - startTime')
+}
+
+asyncFn()
