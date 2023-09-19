@@ -450,7 +450,7 @@ asyncFn()
     .then(value => console.log(value))
     .catch(error => console.log(error.message)) */
 
-const timerPromise = () =>
+/* const timerPromise = () =>
     new Promise ((resolve, reject) =>
     setTimeout(() => resolve(), 2000))
 
@@ -459,7 +459,22 @@ const asyncFn = async () => {
     const startTime = performance.now()
     await timerPromise()
     const endTime = performance.now()
-    console.log('Timer ended, endTime - start - startTime')
+    console.log('Timer ended', endTime - startTime)
 }
 
-asyncFn()
+asyncFn() */
+
+const getData = async (url) => {
+    const res = await fetch(url)
+    const json = await res.json()
+    return json
+}
+
+const url = 'https://jsonplaceholder.typicode.com/todos/55'
+
+try{
+    const data = await getData(url)
+    console.log(data)
+} catch (error) {
+    console.log(error.message)
+}
