@@ -1,0 +1,173 @@
+.game {
+    background-image: url(img/desertBack.png);
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    width: 1300px;
+    height: 600px;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.backMove {
+    background-image: url(img/groundMovie.png);
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 1300px;
+    height: 83px;
+    bottom: 0;
+  
+    animation: backMove 3s linear infinite;
+}
+
+#dino {
+    width: 250px;
+    height: 150px;
+    background-image: url(img/animation.png);
+    background-size: 250px 150px;
+    position: relative;
+    top: 370px;
+}
+
+#cactus {
+    width: 60px;
+    height: 120px;
+    background-image: url(img/Cactus2.png);
+    background-size: 60px 120px;
+    position: relative;
+    top: 250px;
+    left: 500px;
+    animation: cactusMove 1s infinite linear;
+}
+
+body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    background-image: url("/img/desertBack.png");
+  }
+  
+ @keyframes backMove {
+    0% {
+        background-position: 1300px 0px;
+    }
+    100% {
+        background-position: 0px 0px;
+    }
+}
+
+@keyframes cactusMove {
+    0% {
+        left: 1250px;
+    }
+    100% {
+        left: -5px;
+    }
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 370px;
+    }
+    10% {
+        top: 300px
+    }
+    20% {
+        top: 230px
+    }
+    30% {
+        top: 160px
+    }
+    40% {
+        top: 100px
+    }
+    50% {
+        top: 80px
+    }
+    60% {
+        top: 100px
+    }
+    70% {
+        top: 160px;
+    }
+    80% {
+        top: 230px;
+    }
+    90% {
+        top: 300px;
+    }
+    100% {
+        top: 370px;
+    }
+}
+
+.contain {
+    width: 100%;
+    height: 100%;
+    margin: 95%;
+    margin-top: -20%;
+    margin-left: 85%;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .timer_block {
+        width: 150px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        
+            .timeSec {
+                background-color: rgb(255, 187, 0);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: azure;
+                height: 50px;
+                font-size: 50px;
+            }
+                .title {
+                    background-color: rgb(255, 187, 0);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: azure;
+                    height: 50px;
+                    font-size: 50px;
+                }
+    }
+}
+
+.start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 150px;
+    margin: 0;
+    .startSec {
+        border: none;
+        font-size: 35px;
+        padding: 10px;
+        width: 180px;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+        color: rgb(255, 187, 0);
+        &:hover {
+            background-color: burlywood;
+            color: azure;
+        }
+    }
+}
