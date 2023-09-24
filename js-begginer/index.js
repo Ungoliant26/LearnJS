@@ -464,7 +464,7 @@ const asyncFn = async () => {
 
 asyncFn() */
 
-const getData = async (url) => {
+/* const getData = async (url) => {
     const res = await fetch(url)
     const json = await res.json()
     return json
@@ -477,4 +477,59 @@ try{
     console.log(data)
 } catch (error) {
     console.log(error.message)
-}
+} */
+
+// Методы массивов
+
+/* const userMain = [
+    {nameUser: 'Kir', ageUser: 33, score: 11111},
+    {nameUser: 'Nick', ageUser: 23, score: 22222},
+    {nameUser: 'Joe', ageUser: 15, score: 4343434},
+    {nameUser: 'Clark', ageUser: 14, score: 544444},
+    {nameUser: 'Lina', ageUser: 60, score: 2222223},
+] */
+
+/* for (let indexMas = 0; indexMas < userMain.length; indexMas++) {
+    console.table(userMain[indexMas])
+} */
+
+/* for (let man of userMain) {
+    console.log(man)
+} */
+
+//forEach
+
+/* userMain.forEach(person => console.log(person)) */
+
+// Map
+
+/* const newUser = userMain.map(person => `${person.nameUser} old:${person.ageUser*3} man`)
+console.log(newUser) */
+
+// filter
+
+/* const oldMans = userMain.filter(person => person.ageUser >= 18)
+console.log(oldMans) */
+
+// reduce
+
+/* const sumScore = userMain.reduce((total, user) => total + user.score, 0)
+console.log(sumScore) */
+
+// find
+
+/* const joe = userMain.find(user => user.nameUser === 'Joe')
+console.log(joe) */
+
+// findIndex
+
+/* const joeIndex = userMain.findIndex(user => user.nameUser === 'Joe')
+console.log(joeIndex) */
+
+// sum methods
+
+/* const newUserMain = userMain
+    .filter(user => user.ageUser >= 18)
+    .map(user => user.score/2)
+
+console.log(newUserMain) */
